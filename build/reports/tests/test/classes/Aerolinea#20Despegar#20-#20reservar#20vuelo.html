@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Aerolinea Despegar - reservar vuelo</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Aerolinea Despegar - reservar vuelo</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Aerolinea Despegar - reservar vuelo</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">35.664s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="reserva de vuelo y validar pagina de metodos de pago"></a>
+<h3 class="failures">reserva de vuelo y validar pagina de metodos de pago</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 
+Expected: &quot;Detalle del pagoss&quot;
+     but: was &quot;Detalle del pago&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at co.com.accenture.despegar.stepdefinitions.reservarvuelo.ReservarVueloStepDefinitions.elVisualizaraLaPaginaDeMetodosDePagos(ReservarVueloStepDefinitions.java:43)
+	at ✽.el visualizara la pagina de metodos de pagos(src/test/resources/features/reservarvuelo/reservar_vuelo.feature:15)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">reserva de vuelo y validar pagina de metodos de pago</td>
+<td class="failures">35.664s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Dado que el usuario se encuentra en la pagina de inicio de Despegar
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor open url
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor opens the Reservar vuelo userinterface
+ene 17, 2022 1:06:20 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disk-cache-dir=null, --di..., goog:chromeOptions: {args: [--disk-cache-dir=null, --disable-popup-blocking, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 26722
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ene 17, 2022 1:06:22 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Cuando el realiza el proceso para reservar un vuelo
+| origen | destino | validacion |
+| MMedellín, Antioquia, Colombia | BBogotá, Bogotá D.C., Colombia | Detalle del pagoss |
+ERROR StatusLogger No Log4j 2 configuration file found. Using default configuration (logging only errors to the console), or user programmatically provided configurations. Set system property 'log4j2.debug' to show Log4j 2 internal initialization logging. See https://logging.apache.org/log4j/2.x/manual/configuration.html for instructions on how to configure Log4j 2
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor Cargo los datos de la prueba para la automatizaciÃ³n [{origen=MMedellín, Antioquia, Colombia, destino=BBogotá, Bogotá D.C., Colombia, validacion=Detalle del pagoss}]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor reservar vuelo
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Input para ingresar el origen del vuelo
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor enters 'MMedellín, Antioquia, Colombia' into Input para ingresar el origen del vuelo
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Resultado busqueda ciudad origen
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Input para ingresar el destino del vuelo
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor enters 'BBogotá, Bogotá D.C., Colombia' into Input para ingresar el destino del vuelo
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Resultado busqueda ciudad destino
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Campo para desplegar las fechas de ida del vuelo
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Opcion fecha de ida del vuelo
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Opcion fecha de vuelta del vuelo
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Boton para cerrar ventana emergente de metodos de login
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Boton para buscar vuelos segun los filtros ingresados
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Boton para comprar el vuelo seleccionado
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP El actor clicks on Boton para continuar el proceso de compra del vuelo
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Entonces el visualizara la pagina de metodos de pagos
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then validar pagina should be 'Detalle del pagoss'
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: java.lang.AssertionError: 
+Expected: &quot;Detalle del pagoss&quot;
+     but: was &quot;Detalle del pago&quot;?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: java.lang.AssertionError: 
+Expected: &quot;Detalle del pagoss&quot;
+     but: was &quot;Detalle del pago&quot;?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: java.lang.AssertionError: 
+Expected: &quot;Detalle del pagoss&quot;
+     but: was &quot;Detalle del pago&quot;?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: reserva de vuelo y validar pagina de metodos de pago
+--------------------------------------------------------------------------?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP Then validar pagina should be 'Detalle del pagoss'?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: &quot;Detalle del pagoss&quot; but: was &quot;Detalle del pago&quot;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 17/01/2022 01:06:56 AM</p>
+</div>
+</div>
+</body>
+</html>
